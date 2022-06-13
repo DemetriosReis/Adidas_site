@@ -8,7 +8,6 @@
 
 html,
 body {
-    height: 100vh;
     font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -95,17 +94,23 @@ form input {
     font-size: 18px;
     height: 45px;
     margin-bottom: 13px;
-    border-radius: 20px;
+    border-radius: 25px;
     border: 2px solid black;
 }
 form [type="submit"] {
     background-color: black;
     color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 form [type="submit"]:hover {
-    background-color: rgb(153, 153, 153);
+    background-color: rgb(145, 145, 145);
     color:black;
     cursor: pointer;
+    font-weight: 900;
+    transform: translateY(-3px)
 }
 
 main .container-main img{
@@ -113,6 +118,10 @@ main .container-main img{
 }
 
 /* CARDS */
+
+a{
+    text-decoration: none;
+}
 
 .cards {
     width: 90%;
@@ -131,6 +140,7 @@ main .container-main img{
 }
 
 .card{
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -143,10 +153,12 @@ main .container-main img{
 }
 
 .image {
+    border-radius: 10px 10px 0 0;
     width: 100%;
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    height: 225px;
 }
 
 .image img{
